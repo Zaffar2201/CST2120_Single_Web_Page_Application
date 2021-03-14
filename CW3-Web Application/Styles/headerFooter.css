@@ -1,0 +1,94 @@
+    /*Html & Body main css*/
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    /*Header*/
+    
+    #header {
+        /*Fixed height for header*/
+        height: 2.75em;
+        background-color: rgba(0, 0, 0, 0.8);
+        left: 0;
+        border: 1.5px solid rgba(0, 0, 0, 0.8);
+    }
+    /*Styling for Navigation bar*/
+    
+    .nav {
+        /*Space between contents inside the box and border*/
+        padding-right: 14px;
+        padding-top: 10px;
+        /*Text alignment properties*/
+        text-align: center;
+        /*Nav bar takes full height of header*/
+        height: 100%;
+        margin: 0;
+    }
+    /*Links in nav bar*/
+    
+    .nav a {
+        /*Display a single element*/
+        display: inline-block;
+        text-decoration: none;
+        /*Text colour*/
+        color: rgb(235, 97, 35);
+        font-size: 15px;
+        font-family: Eater;
+        /*Space between each link*/
+        padding-right: 8px;
+        margin-right: 25px;
+    }
+    /*CSS for nav links hovering*/
+    
+    .nav a:hover {
+        font-size: 16px;
+        color: #94130b;
+    }
+    /*Body css*/
+    
+    body {
+        /*Background image*/
+        background-image: url("../Images/bg2.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    /*Footer main css*/
+    
+    footer {
+        width: 100%;
+        /*Background color with opacity*/
+        background-color: transparent;
+        bottom: 0;
+    }
+    /*Css for any text residing in footer*/
+    
+    .footer-text {
+        font-family: Poppins, Helvetica, Arial, sans-serif;
+        /*Remove any font weight*/
+        font-style: normal;
+        color: rgb(235, 97, 35);
+        padding-top: 30px;
+        text-align: center;
+    }
+    /*Social media icons in the footer*/
+    
+    footer img {
+        width: 25px;
+        height: 25px;
+        /*Opacity of each icons*/
+        opacity: 0.90;
+        overflow: hidden;
+    }
+    /*Upon hover, zoom*/
+    
+    footer img:hover {
+        transform: scale(1.3);
+    }
+    
+    #Fimage {
+        text-align: center;
+    }

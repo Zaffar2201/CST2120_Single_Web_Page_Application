@@ -1,0 +1,356 @@
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    /*border: 1px solid #888;*/
+    width: 25%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    /*Float to right*/
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/*Upon hover close button*/
+
+.close:hover,
+.close:focus {
+    color: rgb(235, 97, 35);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Form properties*/
+
+#lgform,
+#rgform {
+    width: 100%;
+    background-color: #051019;
+    /*Align text center*/
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    border: solid rgb(235, 97, 35);
+    font-family: Eater;
+}
+
+
+/*Heading in lgform*/
+
+#lgform h4,
+#rgform h4 {
+    padding-top: 15px;
+    font-family: Eater;
+    color: white;
+}
+
+
+/*Placeholder effects*/
+
+::placeholder {
+    color: black;
+}
+
+#loginError,
+#rgError {
+    margin-top: -7px;
+    color: #051019;
+    font-size: 12px;
+}
+
+#rgform select {
+    padding: 10px;
+    float: left;
+    /*Distance in px from the LHS*/
+    margin-left: 55px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    opacity: 0.75;
+}
+
+
+/* Styling for any input in the lgform*/
+
+#lgform input,
+#rgform input {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.75;
+}
+
+
+/*Styling for a specific input*/
+
+#rgform input.phone-input {
+    width: 163px;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#lgform button,
+#rgform button {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    /*Background colour*/
+    background-color: lightskyblue;
+    opacity: 1 !important;
+}
+
+#main,
+#mainUserStory {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*Height of middle div*/
+    max-height: calc(100vh - 2.75em);
+    min-height: calc(100vh - 10.75em);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.55);
+    overflow: scroll;
+    display: none;
+}
+
+p {
+    color: white;
+}
+
+
+/* width */
+
+.scrollable-div::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+.scrollable-div::-webkit-scrollbar-track:hover {
+    /*box-shadow: inset 0 0 5px black;*/
+    border-radius: 7px;
+    background: black;
+}
+
+
+/* Handle */
+
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background: rgb(235, 97, 35);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+#subscriptionWrapper {
+    width: 100%;
+    height: 200px;
+    /*Set background colour with opacity*/
+    background: transparent;
+}
+
+#mail-form {
+    /*Centered text*/
+    text-align: center;
+}
+
+#subscription-email {
+    height: 35px;
+    /*A solid white border of 2.5px*/
+    border: 2.5px solid #EEE6E6;
+    background: #020202;
+    text-align: center;
+}
+
+
+/*Increase size upon hover*/
+
+#subscription-email:hover {
+    border: 3px solid #EEE6E6;
+}
+
+
+/*Subscription submit button*/
+
+#subscription-submit {
+    width: 660px;
+    /*Transparent background*/
+    background: transparent;
+    outline: none;
+    background: #020202;
+    font-family: sans-serif;
+    font-size: 13.5px;
+    border: 2.5px solid #EEE6E6;
+    height: 40px;
+}
+
+
+/*Specify placeholder for specific input*/
+
+input[id^="subscription-email"]::-webkit-input-placeholder {
+    font-size: 14.5px;
+    color: #94130b;
+    font-family: Eater;
+}
+
+
+/*Hover effect on submit button*/
+
+#subscription-submit:hover {
+    opacity: 0.5;
+}
+
+#post {
+    width: 100%;
+    margin-top: 25px;
+    /*Min-heigt of post story*/
+    min-height: 400px;
+}
+
+#post-info {
+    /*Float to left*/
+    float: left;
+    width: 21%;
+    min-height: 100%;
+    color: rgb(220, 20, 60);
+    font-family: Eater;
+}
+
+
+/*Styling ofr image*/
+
+#post-info img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*post-story styling*/
+
+#post-story {
+    float: right;
+    width: 77.5%;
+    min-height: 100px;
+    margin-top: 15px;
+    text-align: justify;
+    color: rgb(220, 20, 60);
+    padding-left: 1px;
+    padding-right: 5px;
+    /*Font-family Eater type*/
+    font-family: Eater;
+    font-size: 14px;
+}
+
+
+/*Styling for message box*/
+
+.author-story-input {
+    border: 1px solid rgb(235, 97, 35);
+    background: #020202;
+    margin-left: 160px;
+    height: 175px;
+    margin-top: 5px;
+    width: 560px;
+    /*Remove default outline property*/
+    outline: none;
+    color: #EEE6E6;
+}
+
+
+/*Hovering effect of input textbox*/
+
+.author-story-input:hover,
+#post-submit:hover,
+#myStory-logout:hover {
+    border-bottom: solid rgba(235, 97, 35, 0.7);
+    overflow: hidden;
+}
+
+
+/*Input textbox placeholder*/
+
+input[id^="story"]::-webkit-input-placeholder {
+    font-size: 15.5px;
+    color: #94130b;
+    font-family: Eater;
+    text-align: left;
+}
+
+
+/*Submit button*/
+
+#post-submit {
+    width: 155px;
+    height: 40px;
+    margin-top: 15px;
+    outline: none;
+    /*Set background colour*/
+    background: #020202;
+    font-family: Eater;
+    font-size: 13.5px;
+    border: 1px solid #020202;
+    margin-right: 30px;
+    /*Float button to the RHS of parent div*/
+    float: right;
+}
+
+#myStory-logout {
+    width: 155px;
+    height: 40px;
+    margin-top: 15px;
+    outline: none;
+    border-color: #020202;
+    /*Set background colour*/
+    background: #020202;
+    font-family: Eater;
+    font-size: 13.5px;
+    margin-left: 130px;
+    /*Float button to the RHS of parent div*/
+    float: left;
+}

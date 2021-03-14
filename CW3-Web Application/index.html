@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--Start of html page-->
+<html lang="en">
+
+
+<!-- Head section-->
+
+<head>
+    <meta charset="utf-8">
+    <!--Display title of website on title bar-->
+    <title>ParaSto</title>
+
+    <!--Link external styling sheet-->
+    <link href="Styles/index.css" type="text/css" rel="stylesheet">
+    <link href="Styles/headerFooter.css" type="text/css" rel="stylesheet">
+    <script src='http://use.edgefonts.net/eater.js'></script>
+
+    <script src="JS/common.js" async></script>
+    <script src="JS/index.js" async></script>
+    <script src="JS/myStory.js" async></script>
+    <script src="JS/register.js" async></script>
+    <script src="JS/login.js" async></script>
+
+
+</head>
+
+
+
+<body>
+
+    <!--Header element with unique id 'header'-->
+    <header id="header">
+
+
+        <!--Div element to wrap navigation bar into header-->
+        <div class="nav">
+
+
+
+            <!--Navigation bar links-->
+            <a id="index" href="/">Home</a>
+            <a id="myStory">MyStory</a>
+            <a id="login">Login</a>
+            <a id="register">Register</a>
+        </div>
+    </header>
+
+
+    <!--Main element of index page starts here-->
+    <!--These divs with id main & mainUserStory will be displayed using Javascript-->
+    <div id="main" class="scrollable-div" style="overflow-x:hidden;overflow-y: auto;">
+
+
+
+    </div>
+
+    <div id="mainUserStory" class="scrollable-div" style="overflow-x:hidden;overflow-y: auto;">
+
+    </div>
+
+    <!-- The Login Modal -->
+    <div id="loginModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--Form starts here and redirects to game.php-->
+            <br><br>
+
+            <div id="lgform">
+
+                <!--Heading-->
+                <h4>Log in</h4>
+
+                <!--Input text box-->
+                <!--Prevents autocomplete from previous input and insert placeholder for each input-->
+                <input type="text" id="lguname" name="lguname" placeholder="Username" autocomplete="off" required><br><br>
+                <input type="password" id="lgpword" name="lgpword" placeholder="Password" required><br><br>
+                <!--Error message span to be generated from javascript-->
+                <span id="loginError"></span><br><br>
+
+
+                <!--Button to submit credentials-->
+                <button name="sign-in" onclick="loginProcess()">Sign in</button><br><br><br>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- The Register Modal -->
+    <div id="registerModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--Form starts here and redirects to game.php-->
+            <br><br>
+            <!--Main register form-->
+            <div id="rgform">
+
+                <!--Heading-->
+                <h4>Register</h4>
+
+                <!--Input text box-->
+                <!--Prevents autocomplete from previous input and insert placeholder for each input-->
+                <input type="text" id="rgname" name="rgname" placeholder="Name" autocomplete="off"><br><br>
+                <input type="email" id="rgemail" name="rgemail" placeholder="Email" autocomplete="off"><br><br>
+                <!--Select dropbox-->
+                <select name="Country-code" id="country-code">
+                <option value="+44">+44</option>
+                <option value="+33">+33</option>
+                <option value="+230">+230</option>
+            </select>
+                <input class="phone-input" type="tel" id="rgphone" name="rgphone" placeholder="Phone" autocomplete="off"><br><br>
+                <input type="text" id="rguname" name="rguname" placeholder="Username" autocomplete="off"><br><br>
+                <input type="password" id="rgpword" name="rgpword" placeholder="Password"><br><br>
+                <!--Error message span to be generated from Javascript-->
+                <span id="rgError"></span><br><br>
+
+
+                <!--Button to submit-->
+                <button name="register" onclick="registerProcess()">Register</button><br><br><br>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <footer>
+        <!--Company rights-->
+        <p class="footer-text">© 1996-2020, ParaSto.com, Inc. or its affiliates</p><br>
+        <!--Social media icons-->
+        <div id="Fimage">
+            <img src="Images/facebook.png" alt="facebook">&nbsp;&nbsp;
+            <img src="Images/twitter.png" alt="twitter">&nbsp;&nbsp;
+            <img src="Images/linkedin.png" alt="linkedin">&nbsp;&nbsp;
+            <img src="Images/instagram.png" alt="instagram">&nbsp;&nbsp;
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
